@@ -28,7 +28,7 @@
   header nav ul {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   li {
     list-style: none;
