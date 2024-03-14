@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    max-width: 1024px;
+    text-align: center;
+    line-height: 1.6;
+    background-color: rgb(246, 245, 245);
+    font-family: "Work Sans", sans-serif;
+    margin: auto;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   header h1 {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+ header nav {
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  li {
+    list-style: none;
+    margin: 1.2rem;
+  }
+  header nav ul li a {
+    background-color: white;
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 0.3rem;
+  }
+  #info {
+    margin-bottom: 2rem;
+  }
+  
+  #info img {
+    max-width: 70%;
+    border-radius: 10px;
+  }
+  p {
+    line-height: 1.5;
+    padding: 1rem 3rem 2rem;
+  }
+  
+  #portfolio {
+    background-color: white;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  
+  #portfolio h2 {
+    padding: 3rem 2rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .card {
+    padding-bottom: 2rem;
+  }
+  
+  .card img {
+    margin-bottom: 2rem;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .information {
+    padding: 5px;
+    font-size: 15px;
+  }
+  
+  #contact {
+    margin: 3rem;
+  }
+  
+  footer nav {
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer hr {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  footer nav ul {
+    display: none;
+  }
+  
+  address {
+    font-style: normal;
+    margin-bottom: 5rem;
+  }
+  
+  address div {
+    margin-bottom: 1rem;
+  }
+
+  /* Media Queries*/
+
+@media screen and (min-width:768px) {
+    body {
+      font-size: 1.2rem;
+    }
+  
+    header nav ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      background-color: antiquewhite;
+    }
+  
+    #info img {
+      width: 40%;
+      order: 1;
+      margin-right: 2rem;
+    }
+  
+    #info {
+      display: flex;
+    }
+  
+    #info p {
+      text-align: left;
+      padding: 0 2rem;
+    }
+    .card {
+      flex-basis: 49%;
+    }
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1%;
+    }
+  
+    .back {
+        display: none;
+      }
+    
+    footer nav ul {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px){
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2rem;
+      padding-right: 3rem;
+    }
+  
+    header nav {
+      width: auto;
+      margin-bottom: 0;
+    }
+  
+    header nav ul li a {
+      padding: 1rem;
+    }
+  
+    #info p {
+      padding: 0 4rem;
+      margin-right: 2rem;
+    }
+  
+    #info img {
+      margin-right: 4rem;
+    }
+  
+    #portfolio {
+      margin: 0 2rem;
+    }
+    
+    
+    .card {
+      flex: 32%;
+      font-size: 1rem;
+    }
+  }
+  
+  
